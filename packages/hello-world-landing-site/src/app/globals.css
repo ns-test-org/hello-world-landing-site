@@ -168,24 +168,37 @@ body {
   animation: float 4s ease-in-out infinite;
 }
 
-/* Color shifting animation */
+/* Color shifting animation - more vibrant and noticeable */
 @keyframes color-shift {
-  0%, 100% {
-    color: #fb923c; /* orange-400 */
+  0% {
+    color: #f97316; /* orange-500 - bright orange */
+    text-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
   }
-  25% {
-    color: #fbbf24; /* amber-400 */
+  20% {
+    color: #f59e0b; /* amber-500 - bright amber */
+    text-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
   }
-  50% {
-    color: #fde047; /* yellow-300 */
+  40% {
+    color: #eab308; /* yellow-500 - bright yellow */
+    text-shadow: 0 0 20px rgba(234, 179, 8, 0.5);
   }
-  75% {
-    color: #f87171; /* red-400 */
+  60% {
+    color: #ef4444; /* red-500 - bright red */
+    text-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+  }
+  80% {
+    color: #ec4899; /* pink-500 - bright pink */
+    text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+  }
+  100% {
+    color: #f97316; /* orange-500 - back to start */
+    text-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
   }
 }
 
 .animate-color-shift {
-  animation: color-shift 4s ease-in-out infinite;
+  animation: color-shift 3s ease-in-out infinite;
 }
+
 
 
