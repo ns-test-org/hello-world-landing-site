@@ -147,3 +147,24 @@ body {
 .animate-bounce-horizontal {
   animation: bounce-horizontal 1.5s ease-in-out infinite;
 }
+
+/* Floating and oscillating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-25px) translateX(5px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
