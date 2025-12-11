@@ -200,5 +200,38 @@ body {
   animation: color-shift 3s ease-in-out infinite;
 }
 
+/* Liquid grid background */
+.liquid-grid {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+  background-size: 50px 50px;
+  animation: liquidFlow 8s ease-in-out infinite;
+}
+
+@keyframes liquidFlow {
+  0%, 100% {
+    background-position: 0 0, 0 0;
+    transform: scale(1) skewX(0deg);
+    filter: blur(0px);
+  }
+  25% {
+    background-position: 25px 25px, -25px 25px;
+    transform: scale(1.05) skewX(2deg);
+    filter: blur(1px);
+  }
+  50% {
+    background-position: 50px 0, 0 50px;
+    transform: scale(1.1) skewX(0deg);
+    filter: blur(2px);
+  }
+  75% {
+    background-position: 25px -25px, 25px 25px;
+    transform: scale(1.05) skewX(-2deg);
+    filter: blur(1px);
+  }
+}
+
+
 
 

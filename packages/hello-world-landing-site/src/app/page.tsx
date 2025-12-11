@@ -1,7 +1,10 @@
 export default function Landing() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600">
-      <div className="text-center">
+    <div className="relative flex items-center justify-center min-h-screen bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600 overflow-hidden">
+      {/* Animated liquid grid background */}
+      <div className="absolute inset-0 liquid-grid opacity-30"></div>
+      
+      <div className="text-center relative z-10">
         <h1 className="text-7xl font-bold text-white mb-4 animate-float animate-color-shift drop-shadow-2xl">
           Hello World
         </h1>
@@ -12,6 +15,7 @@ export default function Landing() {
     </div>
   );
 }
+
 
 
 
